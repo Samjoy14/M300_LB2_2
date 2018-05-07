@@ -71,7 +71,7 @@ EXPOSE 10000
 CMD /usr/bin/touch /var/webmin/miniserv.log && /usr/sbin/service webmin restart && /usr/bin/tail -f /var/webmin/miniserv.log
 ```
 
-### Container starten
+### Nun start Container
 ```
 docker build -t webmin 
 docker run -d -p 10000:443  --name webmin webmin
